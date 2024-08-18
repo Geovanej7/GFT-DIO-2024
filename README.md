@@ -1,12 +1,37 @@
 # GFT-DIO-2024
 
 ## Diagrama de classes 
-Here is a simple flow chart:
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+classDiagram
+    class User {
+        +String name
+    }
+
+    class Account {
+        +String number
+        +String agency
+        +float balance
+        +float limit
+    }
+
+    class Feature {
+        +String icon
+        +String description
+    }
+
+    class Card {
+        +String number
+        +float limit
+    }
+
+    class News {
+        +String icon
+        +String description
+    }
+
+    User --> Account
+    User --> Feature
+    User --> Card
+    User --> News
 ```
