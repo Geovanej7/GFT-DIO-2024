@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${PGURL}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate # ou 'create ' ,'update' , 'create-drop', 'validate' dependendo do seu uso

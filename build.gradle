@@ -24,6 +24,13 @@ dependencies {
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0'
+}
+
+tasks.jar{
+	manifest {
+		attributes["Main-Class"] = "me.dio.gtf_dio_2024.GtfDio2024Application"
+	}
 }
 
 tasks.named('test') {
